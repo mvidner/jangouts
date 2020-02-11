@@ -39,7 +39,7 @@ export const createDataChannelService = (feedsService, logService, eventsService
       }
       // Log the event
       logEntry = createLogEntry('muteRequest', {
-        source: feedsService.find(remoteId),
+        feed: feedsService.find(remoteId),
         target: feed
       });
       logService.add(logEntry);
