@@ -11,6 +11,7 @@ import { MessageSquare } from 'react-feather';
 import Header from '../../Header';
 import Speaker from '../../Speaker';
 import Participants from '../../Participants';
+import ParticipantsDynamicGrid from '../../Participants/ParticipantsDynamicGrid';
 import Chat from '../../Chat';
 
 import { classNames } from '../../../utils/common';
@@ -48,7 +49,7 @@ function Classic() {
               'overflow-y-auto row-span-2 col-span-2 border-t sm:row-span-3 sm:col-span-1 sm:border-t-0',
               !showChat && 'row-span-4 sm:row-span-6'
             )}>
-            <Participants />
+            <ParticipantsDynamicGrid />
           </div>
           {showChat && (
             <div className="overflow-y-auto row-span-2 col-span-2 border-t sm:row-span-6 sm:border-t-0 sm:border-l-2">
